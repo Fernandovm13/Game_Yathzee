@@ -1,0 +1,6 @@
+<div class="dice-container">
+    <div *ngFor="let die of dice; let i = index" class="die" [class.held]="heldDice[i]" (click)="toggleHold(i)">
+      {{ die }}
+    </div>
+  </div>
+  

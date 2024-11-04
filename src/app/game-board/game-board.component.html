@@ -1,0 +1,7 @@
+<div class="game-board">
+    <app-dice [dice]="yahtzeeService.dice" [heldDice]="yahtzeeService.heldDice"></app-dice>
+    <button (click)="rollDice()" [disabled]="rollsLeft === 0">Lanzar dados ({{ rollsLeft }} Lanzamientos restantes)</button>
+    <button (click)="resetGame()">Reiniciar Juego</button>
+    <app-score-board></app-score-board>
+  </div>
+  

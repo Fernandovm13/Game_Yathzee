@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `<app-game-board></app-game-board>`,
+  styles: []
 })
-export class AppComponent {
-  title = 'Mini-hack';
-}
+export class AppComponent { }

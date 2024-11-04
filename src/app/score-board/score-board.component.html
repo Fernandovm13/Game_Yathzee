@@ -1,0 +1,8 @@
+<div class="score-board">
+    <div *ngFor="let category of yahtzeeService.categories">
+      {{ category.name }}: {{ category.score }} 
+      <button (click)="scoreCategory(category.name)" [disabled]="category.scored">Marcar</button>
+    </div>
+    <div class="total-score">Puntaje Total: {{ yahtzeeService.totalScore }}</div>
+  </div>
+  
